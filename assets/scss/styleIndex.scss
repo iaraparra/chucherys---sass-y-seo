@@ -21,6 +21,9 @@
         opacity: 1;
     };
 }
+.navbar{
+    background-color: $colortipografia;
+}
 .bodyIndex{
     background-color: $colorfondo;
 }
@@ -40,6 +43,9 @@
 .footer__boton{
     background-color: $colortipografia;
     border: none;
-    border-radius: 2px;
+    width: 200px;
+    height: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
     color: $colorfondo;
 }

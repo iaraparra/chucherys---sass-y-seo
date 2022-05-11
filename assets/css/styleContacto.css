@@ -29,3 +29,6 @@
 .bodyPages{
     background-color: rgb(253, 244, 251);
 }
+.form-control__texrarea{
+    height: 200px;
+}
