@@ -1,3 +1,4 @@
+@import "_variables.scss";
 *{
     margin: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -33,13 +34,13 @@
     height: 200px;
 }
 .footer__boton{
-    background-color: $coloroscuro;
-    border: none;
-    width: 100px;
-    height: 50px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    color: $colorclaro;
+    background-color: map-get($map: $boton, $key: $background-color );
+    border: map-get($map: $boton, $key: $border );
+    width: map-get($map: $boton, $key: $width );
+    height: map-get($map: $boton, $key: $heigth );
+    padding: map-get($map: $boton, $key: $padding );
+    border-radius: map-get($map: $boton, $key: $border-radius );
+    color: map-get($map: $boton, $key: $color );
 }
 .boton{
     @extend.footer__boton

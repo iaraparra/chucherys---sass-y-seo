@@ -1,2 +1,11 @@
 $coloroscuro:rgb(112, 22, 75);
 $colorclaro: rgb(253, 244, 251);
+$boton:(
+    background-color: $coloroscuro,
+    border: none,
+    width: 100px,
+    height: 50px,
+    padding: 10px 15px,
+    border-radius: 5px,
+    color: $colorclaro,
+)
