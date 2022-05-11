@@ -1,34 +1,76 @@
-*{
-    margin: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(63, 0, 37);
+* {
+  margin: 5px;
+  font-family: 'Montserrat', sans-serif;
+  color: #3f0025;
 }
+
 .logo {
-    grid-area: logo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-name: aparecer;
+  grid-area: logo;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
 }
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes aparecer {
-    0%{
-        opacity: 0;
-    };
-    100%{
-        opacity: 1;
-    };
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-.botonFooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+
+.botonFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.bodyPages{
-    background-color: rgb(253, 244, 251);
+
+.bodyPages {
+  background-color: #fdf4fb;
 }
-.form-control__texrarea{
-    height: 200px;
+
+.form-control__texrarea {
+  height: 200px;
 }
+
+.footer__boton {
+  background-color: #3f0025;
+  border: none;
+  width: 100px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fdf4fb;
+}
+
+/*# sourceMappingURL=styleContacto.css.map */

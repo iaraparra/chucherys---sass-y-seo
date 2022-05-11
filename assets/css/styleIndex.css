@@ -41,6 +41,10 @@
   }
 }
 
+.navbar {
+  background-color: #fdf4fb;
+}
+
 .bodyIndex {
   background-color: #fdf4fb;
 }
@@ -74,7 +78,10 @@
 .footer__boton {
   background-color: #70164b;
   border: none;
-  border-radius: 2px;
+  width: 100px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
   color: #fdf4fb;
 }
 /*# sourceMappingURL=styleIndex.css.map */

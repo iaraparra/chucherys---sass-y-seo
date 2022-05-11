@@ -1,10 +1,10 @@
-@import "_variables.scss";
 *{
     margin: 5px;
     font-family: 'Montserrat', sans-serif;
     color: $coloroscuro;
 }
 .logo {
+    grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,24 +21,16 @@
         opacity: 1;
     };
 }
-.navbar{
-    background-color: $colorclaro;
-}
-.bodyIndex{
-    background-color: $colorclaro;
-}
-.tituloDestacados{
-    font-weight: 600;
-    font-size: 20pt;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    color: $coloroscuro;
-}
 .botonFooter{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.bodyPages{
+    background-color: $colorclaro;
+}
+.form-control__texrarea{
+    height: 200px;
 }
 .footer__boton{
     background-color: $coloroscuro;
@@ -48,4 +40,7 @@
     padding: 10px 15px;
     border-radius: 5px;
     color: $colorclaro;
+}
+.boton{
+    @extend.footer__boton
 }
