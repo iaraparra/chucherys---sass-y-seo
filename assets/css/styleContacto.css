@@ -72,5 +72,14 @@
   border-radius: 5px;
   color: #fdf4fb;
 }
+.boton{
+  background-color: #c488b7;
+  border: none;
+  width: 100px;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #35001f;
+}
 
 /*# sourceMappingURL=styleContacto.css.map */

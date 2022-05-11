@@ -43,5 +43,7 @@
     color: map-get($map: $boton, $key: $color );
 }
 .boton{
-    @extend.footer__boton
+    @extend.footer__boton;
+    background-color: #c488b7;
+    color: #35001f;
 }
