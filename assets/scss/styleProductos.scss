@@ -5,6 +5,7 @@
     color: $coloroscuro;
 }
 .logo {
+    grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,26 +22,28 @@
         opacity: 1;
     };
 }
-.navbar{
-    background-color: $colorclaro;
-}
-.bodyIndex{
-    background-color: $colorclaro;
-}
-.tituloDestacados{
-    font-weight: 600;
-    font-size: 20pt;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    color: $coloroscuro;
-}
 .botonFooter{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.footer__boton{
+.bodyPages{
+    background-color: $colorclaro;
+}
+.titulo__productos{
+    font-size: 20pt;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.boton__agregar{
+    @extend.footer__boton;
+    text-decoration: none;
+    background-color: map-get($map: $botonagregar, $key: $background-color );
+    color: map-get($map: $botonagregar, $key: $color );
+  }
+.footer__boton {
     background-color: map-get($map: $boton, $key: $background-color );
     border: map-get($map: $boton, $key: $border );
     width: map-get($map: $boton, $key: $width );
@@ -48,4 +51,4 @@
     padding: map-get($map: $boton, $key: $padding );
     border-radius: map-get($map: $boton, $key: $border-radius );
     color: map-get($map: $boton, $key: $color );
-}
+  }

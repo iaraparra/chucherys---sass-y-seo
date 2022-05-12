@@ -5,6 +5,7 @@
     color: $coloroscuro;
 }
 .logo {
+    grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,24 +22,19 @@
         opacity: 1;
     };
 }
-.navbar{
-    background-color: $colorclaro;
-}
-.bodyIndex{
-    background-color: $colorclaro;
-}
-.tituloDestacados{
-    font-weight: 600;
-    font-size: 20pt;
+.contenedor__local{
+    width: auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
-    color: $coloroscuro;
 }
 .botonFooter{
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.bodyPages{
+    background-color: $colorclaro;
 }
 .footer__boton{
     background-color: map-get($map: $boton, $key: $background-color );
