@@ -1,4 +1,11 @@
 @import "_variables.scss";
+@mixin propiedadesBotonAgregar ($background, $color){
+    background-color: $background;
+    color: $color;
+    width: $ancho;
+    height: $alto;
+    border: $borde;
+}
 *{
     margin: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -34,6 +41,11 @@
     justify-content: center;
     margin-top: 50px;
     color: $coloroscuro;
+}
+.boton__agregar{
+    @extend.footer__boton;
+    @include propiedadesBotonAgregar(#c488b7,#35001f);
+    text-decoration: none;
 }
 .botonFooter{
     display: flex;
